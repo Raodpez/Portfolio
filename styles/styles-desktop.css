@@ -20,17 +20,12 @@ html{
     padding: 0;
 }
 body{
+    width: 100%;
     font-family: 'Karla', Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--light-black);
     color: white;
     display: flex;
     flex-direction: column;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 .h1 , .h2 , .h3 , .h4{
     color: var(--brown);
@@ -49,8 +44,25 @@ body{
 .h4{
     font-size: 1.3em;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imgcontainer{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 
                                     /* Principal Styles*/
+
+.main{
+    max-width: 1300px;
+    margin: 0 auto;
+}
 .header{
     background-color: var(--dark-black);
     max-width: 1200px;
@@ -59,7 +71,7 @@ body{
     position: fixed;
     padding: 0 20px;
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 90vh;
     display: flex;
     align-self: center;
     align-items: center;
@@ -86,15 +98,12 @@ body{
     color: var(--brown);
 }
 
-                                    /*Adding some margin to the top*/
-.main {
-    margin-top: 80px;
-}
 
                                     /* About Section*/
 #about{
+    width: 100%;
     background-color: var(--dark-black);
-    margin: 10px 30px;
+    margin: 10px 0;
     padding: 10px;
     border: 2px solid silver;
     box-shadow: 3px 3px 10px var(--dark-black);
@@ -133,29 +142,25 @@ body{
 
                                     /* Projects Section */
 #projects{
-    width: 90%;
-    margin: 20px auto;
-}
-#projects .h2{
-    text-align: center;
+    margin: 50px auto 0 auto;
 }
 #projects .container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    gap: 20px;
     padding: 10px;
 }
 #projects .container .article{
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     width: 25vw;
+    min-width: 300px;
     min-height: 300px;
     margin: 0 auto;
     border-radius: 10px;
-    box-shadow: 2px 5px 10px var(--violet);
+    box-shadow: 5px 5px 10px var(--violet);
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 0;
 }
 #projects .container .article:nth-child(1){
     background-image: linear-gradient(
@@ -187,22 +192,227 @@ body{
     width: 20%;
 }
 #projects .container .article .a .img{
-    border: 0;
+    width: 100%;
+    border: 1px solid var(--yellow);
     border-radius: 100%;
     background-color: var(--yellow);
 }
 
                                     /* Skills Section */
-#skills{}
-#skills .h2{}
-#skills .container{}
-#skills .h3{}
-#skills .skill{}
+#skills{
+    margin: 50px auto 0 auto;
+}
+#skills .container{
+    margin-top: 20px;
+    
+}
+#skills .h2{
+    text-align: left;
+}
+#skills .row{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#skills .center{
+    justify-content: space-evenly;
+}
+#skills .skill{
+    min-height: 180px;
+    width: 210px;
+    border: 1px solid var(--violet);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--dark-black);
+    text-align: center;
+    color: var(--yellow);
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.languajes .skill:nth-child(1){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("../images/HTML.png");
+}
+.languajes .skill:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("../images/CSS.png");
+}
+.languajes .skill:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("../images/JavaScript.png");
+}
+.languajes .skill:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("../images/C++.svg");
+}
+.languajes .skill:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("../images/C-Sharp.png");
+}
+.tecnologies .skill:nth-child(1){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("../images/Blender.svg");
+}
+.tecnologies .skill:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("../images/Photoshop.png");
+}
+.tecnologies .skill:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("../images/Unity.svg");
+}
+.tecnologies .skill:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("../images/Visual-Studio.svg");
+}
+.tecnologies .skill:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("../images/Visual-Studio-Code.svg");
+}
+.misc .skill:nth-child(1){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("../images/Spanish-Flag.svg");
+}
+.misc .skill:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("../images/Great-Britain-Flag.svg");
+}
 
-#contact{}
-#contact .h2{}
+                                    /* Contact Section */
+#contact{
+    width: 100%;
+    margin: 50px auto 0 auto;
+}
+#contact .h1{
+    margin-bottom: 10px;
+}
+#contact .form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgb(46, 16, 73);
+    min-height: 600px;
+    border-radius: 20px;
+}
+#contact .form .personalinfo{
+    justify-content: space-evenly;
+}
+#contact .form .personalinfo .label{
+    width: 90%;
+    min-height: 50px;
+    font-size: 1.7em;
+    color: var(--yellow);
+}
+#contact .form .personalinfo .text{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid silver;
+    background: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+}
+#contact .form .personalinfo #selectlabel{
+    display: row;
+    text-align: center;
+}
+#contact .form .personalinfo .select{
+    width: 60%;
+    font-size: 0.9em;
+    outline: none;
+    border: none;
+}
+#contact .form .personalinfo .submit{
+    width: 90%;
+    min-height: 50px;
+    border-radius: 10px;
+    border: 2px solid var(--yellow);
+    background-color: var(--violet);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    font-size: 1.7em;
+    color: var(--yellow);
+    outline: none;
+}
+#contact .form .personalinfo .submit:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+#contact .form .message{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(37, 12, 58);
+}
+#contact .form .message .textarea{
+    color: white;
+    width: 90%;
+    height: 90%;
+    border: 0;
+    resize: none;
+    background-color: rgb(37, 12, 58);
+    font-size: 1.3em;
+    outline: none;
+}
 
-.footer{}
-.footer .a{}
-.footer .svg{}
+
+                                        /* Footer */
+.footer{
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 20px;
+    background-color: rgb(10, 10, 10);
+    min-height: 200px;
+    justify-content: start;
+}
+.footer .links{
+    display: flex;
+    margin-bottom: 10px;
+}
+.footer .a{
+    margin: 10px 10px;
+    text-decoration: none;
+    color: grey;
+}
+.footer .img{
+    border-radius: 100%;
+    border: 1px solid white;
+    background-color: white;
+    width: 50px;
+}
 .footer .p{}

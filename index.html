@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/round-account-button-with-user-inside_icon-icons.com_72596.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/styles-desktop.css">
     <link rel="stylesheet" href="styles/styles-mobile.css">
-    <title>Portfolio</title>
+    <title>Raciel Alejandro López Rodríguez</title>
 </head>
 <body>
     <header class="header">
@@ -44,18 +45,18 @@
         </section>
 
         <section class="section" id="projects">
-            <h2 class="h2">Projects</h2>
+            <h1 class="h1">Projects</h1>
             <div class="container">
-                <article class="article container">
+                <article class="imgcontainer article container">
                     <h3 class="h3">Restaurante Raodpez</h3>
                     <a href="https://github.com/Raodpez" class="a"><img src="./images/Github.svg" alt="Github" class="img"></a>
                     
                 </article>
-                <article class="article container">
+                <article class="imgcontainer article container">
                     <h3 class="h3">Reading Survey</h3>
                     <a href="https://github.com/Raodpez" class="a"><img src="./images/Github.svg" alt="Github" class="img"></a>
                 </article>
-                <article class="article container">
+                <article class="imgcontainer article container">
                     <h3 class="h3">Golden Magic Creations</h3>
                     <a href="https://github.com/Raodpez" class="a"><img src="./images/Github.svg" alt="Github" class="img"></a>
                 </article>
@@ -63,40 +64,86 @@
         </section>
 
         <section class="section" id="skills">
-            <h2 class="h2">Skills</h2>
-            <div class="container">
-                <h3 class="h3">Languajes</h3>
-                <div class="skill">HTML</div>
-                <div class="skill">CSS</div>
-                <div class="skill">JavaScript</div>
-                <div class="skill">C++</div>
-                <div class="skill">C#</div>
+            <h1 class="h1">Skills</h1>
+            <div class="languajes">
+                <h3 class="h2">Languajes:</h3>
+                <div class="row">
+                    <div class="skill container imgcontainer">HTML</div>
+                    <div class="skill container imgcontainer">CSS</div>
+                    <div class="skill container imgcontainer">JavaScript</div>
+                    <div class="skill container imgcontainer">C++</div>
+                    <div class="skill container imgcontainer">C#</div>
+                </div>
             </div>
-            <div class="container">
-                <h3 class="h3">Tecnologies</h3>
-                <div class="skill">Blender</div>
-                <div class="skill">Photoshop</div>
-                <div class="skill">Unity</div>
-                <div class="skill">Visual Studio</div>
-                <div class="skill">Visual Studio Code</div>
+            <div class="tecnologies">
+                <h3 class="h2">Tecnologies:</h3>
+                <div class="row">
+                    <div class="skill container imgcontainer">Blender</div>
+                    <div class="skill container imgcontainer">Photoshop</div>
+                    <div class="skill container imgcontainer">Unity</div>
+                    <div class="skill container imgcontainer">Visual Studio</div>
+                    <div class="skill container imgcontainer">Visual Studio Code</div>
+                </div>
             </div>
-            <div class="container">
-                <h3 class="h3">Miscelaneus</h3>
-                <div class="skill">Spanish (Mathern Languaje)</div>
-                <div class="skill">English (Second Languaje)</div>
+            <div class="misc">
+                <h3 class="h2">Miscelaneus:</h3>
+                <div class="row center">
+                    <div class="skill container imgcontainer">Spanish (Mathern Languaje)</div>
+                    <div class="skill container imgcontainer">English (Second Languaje)</div>
+                </div>
             </div>
         </section>
 
         <section class="section" id="contact">
-            <h2 class="h2">Contact Me</h2>
+            <h1 class="h1">Contact Me</h1>
+            <form action="#" class="form">
+                <div class="personalinfo container">
+                    <label for="name" class="label">Name:
+                        <input type="text" name="" id="name" placeholder="ej. Melany" class="text" required>
+                    </label>
+                    <label for="enterprise" class="label">Enterprise:
+                        <input type="text" name="" id="enterprise" placeholder="ej. Microsoft" class="text">
+                    </label>
+                    <label for="motive" class="label">Motive:
+                        <input type="text" name="" id="motive" placeholder="ej. Work" class="text" required>
+                    </label>
+                    <label for="way" class="label" id="selectlabel">Way of contact:
+                        <select name="way" class="select" id="way">
+                            <option value="Email" class="option">Email</option>
+                            <option value="Github" class="option">Github</option>
+                            <option value="Linkedin" class="option">Linkedin</option>
+                            <option value="twitter" class="option">Twitter</option>
+                            <option value="Instagram" class="option">Instagram</option>
+                        </select>
+                    </label>
+                    <input type="submit" value="Submit" class="submit">
+                </div>
+                <div class="message container">
+                    <textarea name="" id="message" cols="30" rows="10" class="textarea"></textarea>
+                </div>
+            </form>
         </section>
     </main>
 
-     <footer class="footer">
-        <a href="https://github.com/Raodpez" class="a">Github</a>
-        <img src="images/Github.svg" alt="Github" class="svg">
-        <a href="https://www.linkedin.com/in/Raodpez" class="a">Linkedin</a>
-        <a href="https://twitter.com/Raciellr32" class="a">Twitter</a>
+     <footer class="footer container">
+        <div class="links">
+            <a href="https://github.com/Raodpez" class="a container">
+                <img src="images/Github.svg" alt="Github" class="img">
+                Github
+            </a>
+            <a href="https://www.linkedin.com/in/Raodpez" class="a container">
+                <img src="./images/Linkedin.svg" alt="Linkedin" class="img">
+                Linkedin
+            </a>
+            <a href="https://twitter.com/Raciellr32" class="a container">
+                <img src="./images/Twitter.svg" alt="Twitter" class="img">
+                Twitter
+            </a>
+            <a href="https://Instagram.com/Raciellr32" class="a container">
+                <img src="./images/Instagram.svg" alt="Instagram" class="img">
+                Instagram
+            </a>
+        </div>
         <p class="p">COPYRIGHT&copy; 2023</p>
      </footer>
 </body>
