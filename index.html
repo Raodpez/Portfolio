@@ -4,35 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/round-account-button-with-user-inside_icon-icons.com_72596.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/styles-desktop.css">
     <link rel="stylesheet" href="styles/styles-mobile.css">
+    <link rel="stylesheet" href="styles/styles-desktop.css">
     <title>Raciel Alejandro López Rodríguez</title>
 </head>
 <body>
     <header class="header">
-        <a href="#about" class="a">Home</a>
-        <nav class="nav">
-            <a href="#projects" class="a">Projects</a>
-            <a href="#skills" class="a">Skills</a>
-            <a href="#contact" class="a">Contact Me</a>
-        </nav>
+        <div class="nav-menu">
+            <div class="menu-icon">
+                <img src="./images/open-menu.png" alt="menu icon" class="img" id="menu-icon">
+            </div>
+            <div class="menu on" id="menu">
+                <ul class="ul">
+                    <li class="li"><a href="#about" class="a">About</a></li>
+                    <li class="li"><a href="#projects" class="a">Projects</a></li>
+                    <li class="li"><a href="#skills" class="a">Skills</a></li>
+                    <li class="li"><a href="#contact" class="a">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
     
-    <main class="main">
-        <section class="section" id="about">
+    <main class="main" id="main">
+        <section class="section about" id="about">
             <div class="principal container">
                 <h1 class="h1">Raciel Alejandro López Rodríguez</h1>
                 <img src="images/Raciel.jpg" alt="User" class="img">
             </div>
             <div class="secondary container">
                 <div class="basic">
-                    <h3 class="h4">Age: <span class="span">18</span></h4>
-                    <h3 class="h4">Actual Occupation: <span class="span">None</span></h4>
+                    <h3 class="h3">Age: <span class="span">18</span></h3>
+                    <h3 class="h3">Actual Occupation: <span class="span">None</span></h3>
                 </div>
                 <div class="details">
                     <h2 class="h2">About Me</h2>
                     <p class="p">I started in high school to learn about topics related to programming and content development.</p>
-                    <h4 class="h4">Nowadays I have knowledge of the:</h4>
+                    <h3 class="h3">Nowadays I have knowledge about:</h3>
                     <ul class="ul">
                         <li class="li">Creation and animation of 3D objects</li>
                         <li class="li">Photo and video editing</li>
@@ -44,13 +51,12 @@
             </div>
         </section>
 
-        <section class="section" id="projects">
-            <h1 class="h1">Projects</h1>
+        <section class="section projects" id="projects">
+            <h1 class="h1">PROJECTS</h1>
             <div class="container">
                 <article class="imgcontainer article container">
                     <h3 class="h3">Restaurante Raodpez</h3>
                     <a href="https://github.com/Raodpez" class="a"><img src="./images/Github.svg" alt="Github" class="img"></a>
-                    
                 </article>
                 <article class="imgcontainer article container">
                     <h3 class="h3">Reading Survey</h3>
@@ -63,8 +69,8 @@
             </div>
         </section>
 
-        <section class="section" id="skills">
-            <h1 class="h1">Skills</h1>
+        <section class="section skills" id="skills">
+            <h1 class="h1">SKILLS</h1>
             <div class="languajes">
                 <h3 class="h2">Languajes:</h3>
                 <div class="row">
@@ -94,8 +100,8 @@
             </div>
         </section>
 
-        <section class="section" id="contact">
-            <h1 class="h1">Contact Me</h1>
+        <section class="section skills" id="contact">
+            <h1 class="h1">CONTACT ME</h1>
             <form action="#" class="form">
                 <div class="personalinfo container">
                     <label for="name" class="label">Name:
@@ -146,5 +152,7 @@
         </div>
         <p class="p">COPYRIGHT&copy; 2023</p>
      </footer>
+
+     <script src="./scripts/main.js"></script>ri
 </body>
 </html> 
