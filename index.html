@@ -15,41 +15,41 @@
                 <img src="./images/open-menu.png" alt="menu icon" class="img" id="menu-icon">
             </div>
             <div class="menu on" id="menu">
-                <ul class="ul">
-                    <li class="li"><a href="#about" class="a">About</a></li>
-                    <li class="li"><a href="#projects" class="a">Projects</a></li>
-                    <li class="li"><a href="#skills" class="a">Skills</a></li>
-                    <li class="li"><a href="#contact" class="a">Contact</a></li>
-                </ul>
+                <a href="#about" class="a">About</a>
+                <a href="#projects" class="a">Projects</a>
+                <a href="#skills" class="a">Skills</a>
+                <a href="#contact" class="a">Contact</a>
             </div>
         </div>
     </header>
     
     <main class="main" id="main">
-        <section class="section about" id="about">
-            <div class="principal container">
-                <h1 class="h1">Raciel Alejandro López Rodríguez</h1>
-                <img src="images/Raciel.jpg" alt="User" class="img">
-            </div>
-            <div class="secondary container">
-                <div class="basic">
-                    <h3 class="h3">Age: <span class="span">18</span></h3>
-                    <h3 class="h3">Actual Occupation: <span class="span">None</span></h3>
+        <div class="fullcontainer" id="about">
+            <section class="section about">
+                <div class="principal container">
+                    <h1 class="h1">Raciel Alejandro López Rodríguez</h1>
+                    <img src="images/Raciel.jpg" alt="User" class="img">
                 </div>
-                <div class="details">
-                    <h2 class="h2">About Me</h2>
-                    <p class="p">I started in high school to learn about topics related to programming and content development.</p>
-                    <h3 class="h3">Nowadays I have knowledge about:</h3>
-                    <ul class="ul">
-                        <li class="li">Creation and animation of 3D objects</li>
-                        <li class="li">Photo and video editing</li>
-                        <li class="li">2D and 3D game development</li>
-                        <li class="li">Software development with low-level languajes</li>
-                        <li class="li">Frontend development</li>
-                    </ul>
+                <div class="secondary container">
+                    <div class="basic">
+                        <h3 class="h3">Age: <span class="span">18</span></h3>
+                        <h3 class="h3">Actual Occupation: <span class="span">None</span></h3>
+                    </div>
+                    <div class="details">
+                        <h2 class="h2">About Me</h2>
+                        <p class="p">I started in high school to learn about topics related to programming and content development.</p>
+                        <h3 class="h3">Nowadays I have knowledge about:</h3>
+                        <ul class="ul">
+                            <li class="li">Creation and animation of 3D objects</li>
+                            <li class="li">Photo and video editing</li>
+                            <li class="li">2D and 3D game development</li>
+                            <li class="li">Software development with low-level languajes</li>
+                            <li class="li">Frontend development</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <section class="section projects" id="projects">
             <h1 class="h1">PROJECTS</h1>
@@ -71,7 +71,7 @@
 
         <section class="section skills" id="skills">
             <h1 class="h1">SKILLS</h1>
-            <div class="languajes">
+            <div class="languajes skillcontainer">
                 <h3 class="h2">Languajes:</h3>
                 <div class="row">
                     <div class="skill container imgcontainer">HTML</div>
@@ -81,7 +81,7 @@
                     <div class="skill container imgcontainer">C#</div>
                 </div>
             </div>
-            <div class="tecnologies">
+            <div class="tecnologies skillcontainer">
                 <h3 class="h2">Tecnologies:</h3>
                 <div class="row">
                     <div class="skill container imgcontainer">Blender</div>
@@ -91,7 +91,7 @@
                     <div class="skill container imgcontainer">Visual Studio Code</div>
                 </div>
             </div>
-            <div class="misc">
+            <div class="misc skillcontainer">
                 <h3 class="h2">Miscelaneus:</h3>
                 <div class="row center">
                     <div class="skill container imgcontainer">Spanish (Mathern Languaje)</div>
@@ -100,33 +100,29 @@
             </div>
         </section>
 
-        <section class="section skills" id="contact">
+        <section class="section contact" id="contact">
             <h1 class="h1">CONTACT ME</h1>
-            <form action="#" class="form">
+            <form action="#" class="form container">
                 <div class="personalinfo container">
-                    <label for="name" class="label">Name:
-                        <input type="text" name="" id="name" placeholder="ej. Melany" class="text" required>
-                    </label>
-                    <label for="enterprise" class="label">Enterprise:
-                        <input type="text" name="" id="enterprise" placeholder="ej. Microsoft" class="text">
-                    </label>
-                    <label for="motive" class="label">Motive:
-                        <input type="text" name="" id="motive" placeholder="ej. Work" class="text" required>
-                    </label>
-                    <label for="way" class="label" id="selectlabel">Way of contact:
-                        <select name="way" class="select" id="way">
-                            <option value="Email" class="option">Email</option>
-                            <option value="Github" class="option">Github</option>
-                            <option value="Linkedin" class="option">Linkedin</option>
-                            <option value="twitter" class="option">Twitter</option>
-                            <option value="Instagram" class="option">Instagram</option>
-                        </select>
-                    </label>
-                    <input type="submit" value="Submit" class="submit">
+                    <label for="name" class="label">Name:</label>
+                    <input type="text" name="" id="name" placeholder="ej. Melany" class="text" required>
+                    <label for="enterprise" class="label">Enterprise:</label>
+                    <input type="text" name="" id="enterprise" placeholder="ej. Microsoft" class="text">
+                    <label for="motive" class="label">Motive:</label>
+                    <input type="text" name="" id="motive" placeholder="ej. Work" class="text" required>
+                    <label for="way" class="label" id="selectlabel">Way of contact:</label>
+                    <select name="way" class="select" id="way">
+                        <option value="Email" class="option">Email</option>
+                        <option value="Github" class="option">Github</option>
+                        <option value="Linkedin" class="option">Linkedin</option>
+                        <option value="twitter" class="option">Twitter</option>
+                        <option value="Instagram" class="option">Instagram</option>
+                    </select>
                 </div>
                 <div class="message container">
                     <textarea name="" id="message" cols="30" rows="10" class="textarea"></textarea>
                 </div>
+                <input type="submit" value="Submit" class="submit">
             </form>
         </section>
     </main>
@@ -153,6 +149,6 @@
         <p class="p">COPYRIGHT&copy; 2023</p>
      </footer>
 
-     <script src="./scripts/main.js"></script>ri
+     <script src="./scripts/main.js"></script>
 </body>
 </html> 
