@@ -12,6 +12,7 @@
     --light-black : rgba(40,40,40,1);
 }
 
+
 html{
     scroll-behavior: smooth;
 }
@@ -19,16 +20,9 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all .5s ease;
 }
 body{
-    background: linear-gradient(
-        135deg,
-        var(--violet),
-        var(--blue),
-        var(--green),
-        var(--blue),
-        var(--violet)
-    );
     width: 100%;
     height: 100%;
     font-family: 'Karla' , sans-serif;
@@ -40,7 +34,6 @@ body{
 .h2,
 .h3,
 .h4{
-    color: var(--orange);
     text-align: center;
     font-weight: bold;
     text-shadow: 1px 1px 10px var(--dark-black);
@@ -49,12 +42,10 @@ body{
     font-size: 2em;
 }
 .h2{
-    color: var(--yellow);
     font-size: 1.6em;
 }
 .h3{
     font-size: 1.4em;
-    color: var(--yellow);
 }
 .h4{
     font-size: 1.3em;
@@ -84,19 +75,30 @@ body{
 }
 .section{
     margin-top: 50px;
+    padding: 10px;
 }
 .imgcontainer{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.section{
-    padding: 10px;
-}
 .fullcontainer{
     padding: 10px;
 }
 
+.light-body{
+    background: linear-gradient(
+        135deg,
+        var(--violet),
+        var(--blue),
+        var(--green),
+        var(--blue),
+        var(--violet)
+    );
+}
+.dark-body{
+    background: var(--light-black);
+}
 /********************************************************************************/
                                     /* nav panel */
 .header{
@@ -118,19 +120,19 @@ body{
 
 .header .nav-menu .menu{
     background-color: var(--light-black);
+    box-shadow: 5px 5px 10px var(--dark-black);
     width: 40vw;
-    max-width: 300px;
+    max-width: 200px;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    transition: all .5s ease;
     padding-top: 50px;
 }
 .header .nav-menu .menu .a{
     display: block;
     font-size: 25px;
-    padding: 10px 40px;
+    padding: 10px 20px;
     cursor: pointer;
     color: #afafaf;
     text-decoration: none;
@@ -139,11 +141,48 @@ body{
     background-color: #afafaf;
     color: var(--dark-black);
 }
+.header .nav-menu .menu .themebuttoncontainer{
+    position: absolute;
+    left: 20px;
+    top: 90%;
+    border-radius: 30px;
+    background: linear-gradient(
+        0deg,
+        #afafaf,
+        white,
+        #afafaf
+    );
+    width: 90px;
+    height: 45px;
+    border: 2px solid var(--green);
+}
+.header .nav-menu .menu .themebutton{
+    position: absolute;
+    top: 1;
+    border: 0;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.header .nav-menu .menu .light{
+    left: 1px;
+    background-image: url("../images/sun.png");
+}
+.header .nav-menu .menu .dark{
+    left: 54%;
+    background-image: url("../images/moon.png");
+}
 
 /********************************************************************************/
                                     /* About */
 .about{
-    background-color: var(--brown);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("../images/about.jpg");
     margin-top: 50px;
     border: 2px solid var(--dark-black);
     border-radius: 10px;
@@ -164,6 +203,7 @@ body{
     display: flex;
 }
 .about .secondary .basic .h3{
+    font-size: 1.2em;
     margin: 10px 5px;
     color: var(--blue);
 }
@@ -176,7 +216,7 @@ body{
 }
 .about .secondary .details .p{}
 .about .secondary .details .h3{
-    margin-top: 5px;
+    margin-top: 10px;
     color: var(--blue);
 }
 .about .secondary .details .ul{
@@ -190,7 +230,8 @@ body{
                                         /* Projects */
 .projects{}
 .projects .h1{
-    color: var(--orange);
+    color: black;
+    text-shadow: 5px 5px 5px var(--pink);
 }
 .projects .container{}
 .projects .article{
@@ -206,6 +247,7 @@ body{
 .projects .article:nth-child(1){
     background-image: linear-gradient(
         0deg,
+        var(--green),
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ), url("../images/Restaurante\ Raodpez\ -\ Opera\ 20_12_2023\ 9_56_46.png");
@@ -213,6 +255,7 @@ body{
 .projects .article:nth-child(2){
     background-image: linear-gradient(
         0deg,
+        var(--green),
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ), url("../images/Readin-Survey.png");
@@ -220,23 +263,31 @@ body{
 .projects .article:nth-child(3){
     background-image: linear-gradient(
         0deg,
+        var(--green),
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ), url("../images/Logo_GMC1.jpg");
 }
-.projects .article .h3{}
+.projects .article .h3{
+    color: var(--yellow);
+    text-shadow: 5px 5px 10px var(--violet);
+}
 .projects .article .a{}
 .projects .article .a .img{}
 
 /********************************************************************************/
                                     /* Skills */
 .skills{}
-.skills .h1{}
+.skills .h1{
+    text-shadow: 5px 5px 10px rgba(245,88,159,0.93);
+}
 .skills .h2{
     text-align: left;
+    text-shadow: 2px 2px 10px rgba(245,88,159,0.93);
+    border-bottom: 1px solid white;
 }
 .skills .row{
-    margin-top: 5px;
+    margin: 20px 0;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
@@ -244,12 +295,17 @@ body{
     font-size: 20px;
 }
 .skills .row .skill{
-    border: 1px solid var(--pink);
     border-radius: 10px;
-    box-shadow: 3px 3px 10px var(--yellow);
+    box-shadow: 2px 2px 10px var(--light-black);
     min-height: 70px;
-    background-color: var(--orange);
-    color: var(--light-black);
+    background: linear-gradient(
+        135deg,
+        rgb(18, 168, 106),
+        rgb(13, 112, 71),
+        rgb(18, 168, 106),
+        rgb(13, 112, 71)
+    );
+    color: white;
     font-weight: bold;
 }
 .skills .skillcontainer{
@@ -265,7 +321,11 @@ body{
 /********************************************************************************/
                                     /* Contact */
 .contact{}
-.contact .h1{}
+.contact .h1{
+    color: black;
+    text-shadow: 5px 5px 10px var(--pink);
+    margin-bottom: 10px;
+}
 .contact .form{
     border-radius: 10px;
     background-color: var(--violet);
@@ -274,6 +334,7 @@ body{
 .contact .form .personalinfo{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    gap: 0 5px;
 }
 .contact .form .personalinfo .label{
     width: 100%;
@@ -324,7 +385,7 @@ body{
     margin-top: 50px;
     width: 100%;
     min-height: 100px;
-    background-color: var(--light-black);
+    background-color: var(--dark-black);
     padding: 10px;
 }
 .footer .links{

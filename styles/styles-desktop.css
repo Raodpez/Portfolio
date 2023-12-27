@@ -1,0 +1,163 @@
+@media (min-width: 720px) {
+    .h1{
+        font-size: 2.5em;
+    }
+    .h2{
+        font-size: 2.3em;
+    }
+    .h3{
+        font-size: 1.7em;
+    }
+    .h4{
+        font-size: 1.5em;
+    }
+
+    /**********************************************************************************************************/
+    .about{
+        margin-top: 30px;
+        min-height: 90vh;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+    .about .principal .img{
+        margin-top: 10px;
+        border: 0;
+        border-radius: 10px;
+        width: 95%;
+        height: 85%;
+    }
+    .about .secondary .basic .h3{
+        font-size: 1.7em;
+        margin: 0 50px;
+    }
+    .about .secondary .details{
+        margin-top: 50px;
+    }
+
+    /********************************************************************************/
+                                        /* Projects */
+    .projects .container{
+        flex-direction: row;
+    }
+    .projects .article{
+        margin: 10px 1%;
+        min-height: 400px;
+        flex-direction: column;
+    }
+    .projects .article .h3{
+        font-size: 1.7em;
+    }
+    .projects .article .a .img{
+        width: 70px;
+    }
+
+    /********************************************************************************/
+                                    /* Skills */
+    .skills{}
+    .skills .h1{}
+    .skills .h2{}
+    .skills .row{
+        grid-template-columns: repeat(5,1fr);
+    }
+    .skills .row .skill{
+        min-height: 145px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .skills .skillcontainer{}
+    .skills .center{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .skills .languajes .skill:nth-child(1){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("../images/HTML.png");
+    }
+    .skills .languajes .skill:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("../images/CSS.png");
+    }
+    .skills .languajes .skill:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("../images/JavaScript.png");
+    }
+    .skills .languajes .skill:nth-child(4){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("../images/C++.svg");
+    }
+    .skills .languajes .skill:nth-child(5){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("../images/C-Sharp.png");
+    }
+    .skills .tecnologies .skill:nth-child(1){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("../images/Blender.svg");
+    }
+    .skills .tecnologies .skill:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("../images/Photoshop.png");
+    }
+    .skills .tecnologies .skill:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("../images/Unity.svg");
+    }
+    .skills .tecnologies .skill:nth-child(4){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("../images/Visual-Studio.svg");
+    }
+    .skills .tecnologies .skill:nth-child(5){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("../images/Visual-Studio-Code.svg");
+    }
+    .skills .misc{}
+    .skills .misc .skill{
+        width: 300px;
+    }
+    .skills .misc .skill:nth-child(1){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("../images/Spanish-Flag.svg");
+    }
+    .skills .misc .skill:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("../images/Great-Britain-Flag.svg");
+    }
+
+}
