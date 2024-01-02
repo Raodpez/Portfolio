@@ -99,12 +99,14 @@ body{
 .dark-body{
     background: var(--light-black);
 }
+.hidden{
+    display: none;
+}
 /********************************************************************************/
                                     /* nav panel */
 .header{
     padding: 10px;
 }
-.header .nav-menu{}
 .header .nav-menu .menu-icon{
     position: fixed;
     z-index: 10;
@@ -117,7 +119,6 @@ body{
     width: 40px;
     cursor: pointer;
 }
-
 .header .nav-menu .menu{
     background-color: var(--light-black);
     box-shadow: 5px 5px 10px var(--dark-black);
@@ -174,7 +175,6 @@ body{
     left: 54%;
     background-image: url("../images/moon.png");
 }
-
 /********************************************************************************/
                                     /* About */
 .about{
@@ -183,13 +183,12 @@ body{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ), url("../images/about.jpg");
-    margin-top: 50px;
+    margin-top: 25px;
     border: 2px solid var(--dark-black);
     border-radius: 10px;
     padding: 10px;
     text-align: center;
 }
-.about .principal{}
 .about .principal .h1{
     color: var(--blue);
 }
@@ -198,7 +197,6 @@ body{
     border-radius: 100%;
     width: 250px;
 }
-.about .secondary{}
 .about .secondary .basic{
     display: flex;
 }
@@ -210,11 +208,9 @@ body{
 .about .secondary .basic .span{
     color: white;
 }
-.about .secondary .details{}
 .about .secondary .details .h2{
     color: var(--blue);
 }
-.about .secondary .details .p{}
 .about .secondary .details .h3{
     margin-top: 10px;
     color: var(--blue);
@@ -224,16 +220,12 @@ body{
     text-align: left;
     padding-left: 10px;
 }
-.about .secondary .details .ul .li{}
-
 /********************************************************************************/
                                         /* Projects */
-.projects{}
 .projects .h1{
     color: black;
     text-shadow: 5px 5px 5px var(--pink);
 }
-.projects .container{}
 .projects .article{
     margin-top: 10px;
     border: 1px solid var(--dark-black);
@@ -272,12 +264,8 @@ body{
     color: var(--yellow);
     text-shadow: 5px 5px 10px var(--violet);
 }
-.projects .article .a{}
-.projects .article .a .img{}
-
 /********************************************************************************/
                                     /* Skills */
-.skills{}
 .skills .h1{
     text-shadow: 5px 5px 10px rgba(245,88,159,0.93);
 }
@@ -314,13 +302,8 @@ body{
 .skills .center{
     grid-template-columns: repeat(2,1fr);
 }
-.skills .languajes{}
-.skills .tecnologies{}
-.skills .misc{}
-
 /********************************************************************************/
                                     /* Contact */
-.contact{}
 .contact .h1{
     color: black;
     text-shadow: 5px 5px 10px var(--pink);
@@ -356,8 +339,6 @@ body{
     min-height: 25px;
     outline: none;
 }
-.contact .form .personalinfo .select .option{}
-.contact .form .message{}
 .contact .form .message .textarea{
     width: 100%;
     min-height: 200px;
@@ -378,7 +359,6 @@ body{
     color: var(--yellow);
     font-size: 20px;
 }
-
 /********************************************************************************/
                                     /* Footer */
 .footer{
@@ -397,7 +377,4 @@ body{
     text-decoration: none;
     outline: none;
 }
-.footer .links .a .img{}
-.footer .p{}
-
 /********************************************************************************/

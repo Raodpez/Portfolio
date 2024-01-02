@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="styles/styles-desktop.css">
     <title>Raciel Alejandro López Rodríguez</title>
 </head>
-<body class="light-body">
+<body class="dark-body">
     <header class="header">
         <div class="nav-menu">
             <div class="menu-icon">
-                <img src="./images/open-menu.png" alt="menu icon" class="img" id="menu-icon">
+                <img src="./images/open-menu2.png" alt="menu icon" class="img" id="menu-icon">
             </div>
             <div class="menu on" id="menu">
                 <a href="#about" class="a">About</a>
@@ -20,7 +20,7 @@
                 <a href="#skills" class="a">Skills</a>
                 <a href="#contact" class="a">Contact</a>
                 <div class="themebuttoncontainer">
-                    <button class="light imgcontainer themebutton" id="themebutton"></button>
+                    <button class="dark imgcontainer themebutton" id="themebutton"></button>
                 </div>
             </div>
         </div>
@@ -107,12 +107,6 @@
             <h1 class="h1">CONTACT ME</h1>
             <form action="#" class="form container">
                 <div class="personalinfo container">
-                    <label for="name" class="label">Name:</label>
-                    <input type="text" name="" id="name" placeholder="ej. Melany" class="text" required>
-                    <label for="enterprise" class="label">Enterprise:</label>
-                    <input type="text" name="" id="enterprise" placeholder="ej. Microsoft" class="text">
-                    <label for="motive" class="label">Motive:</label>
-                    <input type="text" name="" id="motive" placeholder="ej. Work" class="text" required>
                     <label for="way" class="label" id="selectlabel">Way of contact:</label>
                     <select name="way" class="select" id="way">
                         <option value="Email" class="option">Email</option>
@@ -121,6 +115,16 @@
                         <option value="twitter" class="option">Twitter</option>
                         <option value="Instagram" class="option">Instagram</option>
                     </select>
+                    <label for="name" class="label">Name:</label>
+                    <input type="text" name="" id="name" placeholder="ej. Melany" class="text" required>
+                    <label for="enterprise" class="label">Enterprise:</label>
+                    <input type="text" name="" id="enterprise" placeholder="ej. Microsoft" class="text">
+                    <label for="motive" class="label">Motive:</label>
+                    <input type="text" name="" id="motive" placeholder="ej. Work" class="text" required>
+                    <label for="allbutemail" class="label hidden" id="allbutemaillabel">UserName:</label>
+                    <input type="text" name="" id="allbutemail" class="text allbutemail hidden">
+                    <label for="emailback" class="label" id="emailbacklabel">Email:</label>
+                    <input type="text" name="" id="emailback" class="text emailback" placeholder="email@gmail.com">
                 </div>
                 <div class="message container">
                     <textarea name="" id="message" cols="30" rows="10" class="textarea"></textarea>

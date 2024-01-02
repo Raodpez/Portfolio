@@ -54,9 +54,6 @@
 
     /********************************************************************************/
                                     /* Skills */
-    .skills{}
-    .skills .h1{}
-    .skills .h2{}
     .skills .row{
         grid-template-columns: repeat(5,1fr);
     }
@@ -66,7 +63,6 @@
         background-repeat: no-repeat;
         background-size: contain;
     }
-    .skills .skillcontainer{}
     .skills .center{
         display: flex;
         justify-content: space-evenly;
@@ -141,7 +137,6 @@
             rgba(0,0,0,0.5)
         ), url("../images/Visual-Studio-Code.svg");
     }
-    .skills .misc{}
     .skills .misc .skill{
         width: 300px;
     }
